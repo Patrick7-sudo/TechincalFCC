@@ -4,11 +4,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Documentation Page</title>
 </head>
 <body>
-    <div>
-        
-    </div>
+    <main id="main-doc">
+        <div id="navbar-container">
+            <nav id="navbar">
+                <header class="box title-box">JS Documentation</header>
+                <ul class="main-box">
+                    <li class="box">
+                        <a href="#introduction">Introduction</a>
+                    </li>
+
+                    <li class="box">
+                        <a href="#what">What you should already know</a>
+                    </li>
+
+                    <li class="box">
+                        <a href="#Java">JavaScript and Java</a>
+                    </li>
+
+                    <li class="box">
+                        <a href="#hello">Hello World</a>
+                    </li>
+
+                    <li class="box">
+                        <a href="#declare">Declaring variables</a>
+                    </li>
+
+                    <li class="box">
+                        <a href="#variable">Variable scope</a>
+                    </li>
+
+                    <li class="box">
+                        <a href="#global">Global Variables</a>
+                    </li>
+
+                    <li class="box">
+                        <a href="#constants">Constants</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="content">
+            <section class="main-section">
+                <header class="title" id="introduction">Introduction</header>
+
+                <p class="para">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a
+                host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide
+                programmatic control over them.</p>
+
+                <br>
+
+                <p class="para">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements
+                such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by
+                supplementing it with additional objects; for example:</p>
+                
+                <ul class="para-list">
+                    <li class="para-lists">
+                        Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model
+                        (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user
+                        events such as mouse clicks, form input, and page navigation.
+                    </li>
+
+                    <li class="para-lists">
+                        Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For
+                        example, server-side extensions allow an application to communicate with a database, provide continuity of information
+                        from one invocation to another of the application, or perform file manipulations on a server.
+
+                    </li>
+                </ul>
+                
+               </section>
+            
+                <section class="main-section">
+                    <header class="title" id="what">What you should already know
+                    </header>
+                
+                    <p class="para">
+                        This guide assumes you have the following basic background:
+                    </p>
+            
+                
+                    <ul class="para-list">
+                        <li class="para-lists">
+                            A general understanding of the Internet and the World Wide Web (WWW).
+                        </li>
+                
+                        <li class="para-lists">
+                            Good working knowledge of HyperText Markup Language (HTML).
+                        </li>
+
+                        <li class="para-lists">
+                            Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about
+                            JavaScript.
+                        </li>
+                    </ul>
+                
+                </section>
+            
+                <section class="main-section">
+                    <header class="title" id="Java">JavaScript and Java
+
+                    </header>
+                
+                    <p class="para">
+                        JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language
+                        resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression
+                        syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to
+                        JavaScript.
+                    </p>
+                    <br>
+                    <p class="para">
+                        In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based
+                        on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based
+                        object model instead of the more common class-based object model. The prototype-based model provides dynamic
+                        inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any
+                        special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+                    </p>
+                    <br>
+                    <p class="para">
+                        JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and
+                        methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to
+                        implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+                    </p>
+                
+                </section>
+            
+
+                <section class="main-section">
+                    <header class="title" id="hello">Hello world</header>
+                
+                    <p class="para">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+                
+                    <br>
+                    <div class="code-container">
+                    <code class="code-style">
+                        function greetMe(yourName) { alert("Hello " + yourName); }
+                        <br>
+                        greetMe("World");
+                    </code>
+                    </div>
+                    <br>
+                    <p class="para">Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+                
+                </section>
+
+                <section class="main-section">
+                    <header class="title" id="declare">Declaring variables</header>
+                
+                    <p class="para">You can declare a variable in three ways:</p>
+                
+                    <br>
+
+                    <p class="para">
+                        With the keyword var. For example,
+                    </p>
+                    <div class="code-container">
+                        <code class="code-style">
+                            var x = 42.
+                        </code>
+                    </div>
+                    <br>
+                    <p class="para">This syntax can be used to declare both local and global variables.</p>
+
+                    <p class="para">
+                        By simply assigning it a value. For example,
+                    </p>
+
+                    <div class="code-container">
+                        <code class="code-style">
+                            x = 42.
+                        </code>
+                    </div>
+                
+                    <p class="para">
+                        This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+                    </p>
+
+                    <p class="para">
+                        With the keyword let. For example,
+                    </p>
+
+                    <div class="code-container">
+                        <code class="code-style">
+                            let y = 13.
+                        </code>
+                    </div>
+
+                    <p class="para">
+                        This syntax can be used to declare a block scope local variable. See Variable scope below.
+                    </p>
+                </section>
+
+
+                <section class="main-section">
+                    <header class="title" id="variable" >Variable scope</header>
+                
+                    <p class="para">When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+                
+                    <br>
+                
+                    <p class="para">
+                        JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+                    </p>
+                    <div class="code-container">
+                        <code class="code-style">
+                            if (true) { var x = 5; } console.log(x); // 5
+                        </code>
+                    </div>
+                    <br>
+                    <p class="para">This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+                
+                    <div class="code-container">
+                        <code class="code-style">
+                            if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+                            defined
+                        </code>
+                    </div>
+                
+                </section>
+
+                <section class="main-section">
+                    <header class="title" id="global">Global variables
+                
+                    </header>
+                
+                    <p class="para">
+                        Global variables are in fact properties of the global object. In web pages the global object is window, so you can set
+                        and access global variables using the window.variable syntax.
+                    </p>
+                    <br>
+                    <p class="para">
+                        Consequently, you can access global variables declared in one window or frame from another window or frame by specifying
+                        the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this
+                        variable from an iframe as parent.phoneNumber.
+                    </p>
+                
+                </section>
+
+                <section class="main-section">
+                    <header class="title" id="constants">Constants</header>
+                
+                    <p class="para">You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+                
+                    <br>
+                
+                    <div class="code-container">
+                        <code class="code-style">
+                            const PI = 3.14;
+                        </code>
+                    </div>
+                    <br>
+                    <p class="para">A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
+                
+                    <p class="para">
+                        The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+                    </p>
+
+                    <p class="para">
+                        You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+                    </p>
+                
+                    <div class="code-container">
+                        <code class="code-style">
+                            // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL <br>
+                            CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                            }
+                        </code>
+                    </div>
+                
+                    <p class="para">
+                        However, object attributes are not protected, so the following statement is executed without problems.
+                    </p>
+                
+                    <p class="para">
+                        With the keyword let. For example,
+                    </p>
+                
+                    <div class="code-container">
+                        <code class="code-style">
+                            const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+                        </code>
+                    </div>
+                </section>
+                <br>
+
+           
+        </div>
+
+    </main>
 </body>
 </html>
